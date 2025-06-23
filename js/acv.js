@@ -1,6 +1,4 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
+// GSAP est chargé via CDN dans les pages HTML
 gsap.registerPlugin(ScrollTrigger);
 
  gsap.from("nav", { y: -80, opacity: 0, duration: 1, ease: "power2.out", delay: 0.5 });
