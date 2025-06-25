@@ -92,6 +92,12 @@ html, body, *, *::before, *::after {
   transform: translate(-50%, -50%) scale(1.5);
   border-color: #000;
 }
+@media (max-width: 700px) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
 /* ===================== NAVBAR ===================== */
 nav {
     z-index: 1000; 
@@ -377,6 +383,51 @@ nav a:hover::after {
     line-height: 1.7;
     margin-bottom: 18px;
     color: #222;
+}
+
+@media (max-width: 700px) {
+  .profil {
+    min-height: unset;
+    height: auto;
+    padding: 32px 0 0 0;
+    align-items: center;
+  }
+  .profil-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 98vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profil-content img {
+    width: 160px !important;
+    height: 160px !important;
+    margin-bottom: 12px;
+  }
+  .profil h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+  .profil h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  .profil h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .profil p {
+    font-size: 0.98rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .profil-lieu {
+    margin-top: 18px;
+    min-width: unset;
+    max-width: 95vw;
+  }
 }
 
 /* ===================== PARCOURS ===================== */
