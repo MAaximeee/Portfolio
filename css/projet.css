@@ -200,10 +200,14 @@ nav a:hover::after {
 
 .project-images img {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 2px 8px #bbb;
-  object-fit: cover;
+  object-fit: contain;
   background: #f7f7f7;
+  image-rendering: smooth;
+  image-rendering: high-quality;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .project-desc {
@@ -267,6 +271,10 @@ nav a:hover::after {
   pointer-events: none;
   user-select: none;
   z-index: 0;
+  object-fit: contain;
+  image-rendering: smooth;
+  image-rendering: high-quality;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .acv-hero-title {
