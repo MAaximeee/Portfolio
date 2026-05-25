@@ -247,6 +247,120 @@ nav a:hover::after {
   }
 }
 
+/* ===================== COLLABORATION SECTION ===================== */
+
+.collaboration-section {
+  max-width: 1100px;
+  margin: 64px auto 40px auto;
+  padding: 48px 16px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 1px 2px 8px #777575;
+}
+
+.collaboration-content {
+  width: 100%;
+}
+
+.collaboration-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.2rem;
+  color: #23272f;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.collaboration-subtitle {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.screenshot-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-card:hover {
+  transform: translateY(-8px);
+}
+
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #bbb;
+  object-fit: cover;
+  background: #f7f7f7;
+  image-rendering: smooth;
+  image-rendering: high-quality;
+  image-rendering: -webkit-optimize-contrast;
+  transition: box-shadow 0.3s ease;
+}
+
+.screenshot-card:hover img {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-label {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #23272f;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .collaboration-section {
+    margin: 48px auto 40px auto;
+    padding: 32px 16px;
+  }
+  
+  .collaboration-title {
+    font-size: 1.8rem;
+  }
+  
+  .screenshots-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .collaboration-section {
+    margin: 32px auto 40px auto;
+    padding: 24px 12px;
+  }
+  
+  .collaboration-title {
+    font-size: 1.5rem;
+  }
+  
+  .collaboration-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 /* ===================== HERO SECTION ===================== */
 .acv-hero {
   position: relative;
